@@ -1,0 +1,38 @@
+{
+  "name": "petbox",
+  "version": "0.0.1",
+  "private": true,
+  "author": "yasell",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yasell/petbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasell/petbox/issues"
+  },
+  "homepage": "http://petbox.by",
+  "devDependencies": {
+    "browser-sync": "2.23.6",
+    "css-mqpacker": "^6.0.2",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-image": "4.3.0",
+    "gulp-minify": "2.1.0",
+    "gulp-plumber": "1.2.0",
+    "gulp-postcss": "7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "npm-check-updates": "^2.8.6"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "^6.5.0"
+  }
+}
