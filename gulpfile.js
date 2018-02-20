@@ -28,7 +28,7 @@ gulp.task('style', function () {
 				sort: true
 			})
 		]))
-		.pipe(gulp.dest('./'))
+		.pipe(gulp.dest('dist/'))
 		.pipe(rename('app.min.css'))
 		.pipe(csso({
 			restructure: true,
@@ -67,7 +67,7 @@ gulp.task('serve', ['style'], function () {
 		ui: false
 	});
 
-	gulp.watch('assets/src/sass/**/*.{scss,sass}', ['style']);
+	gulp.watch('assets/src/**/*.{scss,sass}', ['style']);
 	gulp.watch('src/js/*.js', ['script']);
 	gulp.watch("*.php").on('change', server.reload);
 });

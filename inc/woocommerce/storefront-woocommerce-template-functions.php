@@ -88,8 +88,10 @@ if ( ! function_exists( 'storefront_product_search' ) ) {
 	 */
 	function storefront_product_search() {
 		if ( storefront_is_woocommerce_activated() ) { ?>
-			<div class="site-search">
-				<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
+			<div class="site-search site-phone">
+				<?php // the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
+				<a class="site-phone__link  site-phone__link--mts" href="tel:+375336717265">+375-33-671-72-65</a>
+				<a class="site-phone__link  site-phone__link--velc" href="tel:+375291359146">+375-29-135-91-46</a>
 			</div>
 		<?php
 		}

@@ -9,7 +9,7 @@ $color_field_hover: rgba(225, 222, 222, 1);
 
 $gray_dark: #3c3c3b;
 $gray: #878787;
-$gray_light: #b1b1b1;
+$gray_light: #cccccc;
 $gray_lightest: #f5f5f5;
 
 // shadow
@@ -17,7 +17,15 @@ $color_shadow: rgba(76, 76, 76, 0.75);
 $img-shadow: 2px 2px 5px $color_shadow;
 
 // fonts
-$font_1: "Fira Sans", "Arial", sans-serif;
+$font_1: "Arial", sans-serif;
+$font_base: -apple-system,
+    BlinkMacSystemFont,
+    Helvetica Neue,
+    PingFang SC,
+    Hiragino Sans GB,
+    Droid Sans Fallback,
+    Microsoft YaHei,
+    sans-serif;
 
 // media queries
 $mobile: 320px;

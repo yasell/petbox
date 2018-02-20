@@ -1,4 +1,50 @@
-.footer {
-	height: 50px;
-	text-align: center;
+.site-footer {
+	padding-top: 0;
+	padding-bottom: 1em;
+	background-color: transparent;
+
+	.col-full {
+		background-color: #2f3033;
+
+		@media (max-width: $tablet) {
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 1.41575em;
+			padding-right: 1.41575em;
+		}
+	}
+
+	@media (max-width: $tablet) {
+		padding-bottom: 0;
+	}
+}
+
+.footer-widgets {
+	padding-top: 2em;
+	border-bottom-color: $gray_light;
+
+	.block {
+		text-align: center;
+		color: $gray_light;
+	}
+
+	.textwidget p img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.widget {
+		@media (max-width: $tablet) {
+			margin-bottom: 2em;
+		}
+	}
+}
+
+.site-info {
+	padding: 1em 0;
+	color: $gray_light;
+
+	> a {
+		display: none;
+	}
 }
