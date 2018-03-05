@@ -1,14 +1,17 @@
 .woocommerce-active .site-header {
 	padding-top: 1em;
 	background-color: transparent;
+	border-bottom: none;
 
 	.col-full {
+		padding-bottom: 68px;
 		background-image: linear-gradient(120deg, #3b41c5 0%, #a981bb 50%, #ffc8a9 100%);
 		background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
 
 		@media (max-width: $tablet) {
 			padding-left: 1.41575em;
 			padding-right: 1.41575em;
+			padding-bottom: 0;
 			margin: 0;
 		}
 	}
@@ -16,7 +19,7 @@
 	// left part
 	.site-branding {
 		display: block;
-		width: 15%;
+		width: auto;
 		margin: 1.5em 3% 1.5em 0;
 
 		@media (max-width: $tablet) {
@@ -34,20 +37,27 @@
 
 	// center part
 	 .secondary-navigation {
-		width: 55%;
-		margin: 2.5em 3% 1.5em 0;
+		width: 63%;
+		margin: 2.5em auto;
+
+		.menu {
+			width: 100%;
+			float: none;
+			text-align: center;
+		}
 
 		ul.menu a {
 			position: relative;
 			display: block;
 			padding: 0;
 			font-size: 1.6em;
+			text-transform: uppercase;
 			color: #fff;
 
-			&:hover {
-				cursor: default;
-				pointer-events: none;
-			}
+			// &:hover {
+			// 	cursor: default;
+			// 	pointer-events: none;
+			// }
 
 			&:after {
 				content: '';
@@ -75,6 +85,21 @@
 		}
 	}
 
+	// main navigation
+	.storefront-primary-navigation {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding-left: 2.617924em;
+		padding-right: 2.617924em;
+    width: 100%;
+		max-width: 100%;
+    // margin-left: calc(-100vw / 2 + 1280px / 2);
+    // margin-right: calc(-100vw / 2 + 1280px / 2);
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	@media (max-width: $tablet) {
 		padding: 0;
 
@@ -84,6 +109,9 @@
 		}
 
 		.storefront-primary-navigation {
+			position: relative;
+			margin-left: 0;
+			margin-right: 0;
 			text-align: center;
 			background-color: transparent;
 

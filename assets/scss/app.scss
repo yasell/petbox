@@ -1,0 +1,15 @@
+// base
+@import "helpers/_variables";
+@import "helpers/_mixins";
+@import "reset";
+@import "base";
+
+// blocks
+@import "blocks/header";
+@import "blocks/site-phone";
+@import "blocks/home";
+@import "blocks/features";
+@import "blocks/category";
+@import "blocks/post";
+@import "blocks/footer";
+@import "blocks/woocommerce";

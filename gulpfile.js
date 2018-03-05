@@ -17,7 +17,7 @@ var image = require('gulp-image');
 
 // compile sass & css optimization
 gulp.task('style', function () {
-	return gulp.src("assets/src/app.scss")
+	return gulp.src("assets/scss/app.scss")
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(postcss([
@@ -67,7 +67,7 @@ gulp.task('serve', ['style'], function () {
 		ui: false
 	});
 
-	gulp.watch('assets/src/**/*.{scss,sass}', ['style']);
+	gulp.watch('assets/scss/**/*.{scss,sass}', ['style']);
 	gulp.watch('src/js/*.js', ['script']);
 	gulp.watch("*.php").on('change', server.reload);
 });

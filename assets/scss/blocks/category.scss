@@ -1,0 +1,15 @@
+.storefront-full-width-content .woocommerce-products-header {
+	margin-bottom: 42px;
+	padding-bottom: 0 !important;
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-size: 3em;
+}
+
+// list
+ul.columns-3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}

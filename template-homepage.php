@@ -31,6 +31,47 @@ get_header(); ?>
 			 */
 			do_action( 'homepage' ); ?>
 
+			<section class="storefront-product-section content-features">
+				<h2 class="content-features__title"> Почему стоит работать с нами </h2>
+				<ul>
+					<?php
+					$args = array(
+							'post_type' => 'features',
+							'posts_per_page' => 3
+					);
+
+					$my_query = new WP_Query( $args );
+
+					if ( $my_query->have_posts() ) {
+
+							while ( $my_query->have_posts() ) {
+									$my_query->the_post();
+									$image = get_field('features_image');
+									?>
+
+									<li class="content-features__item">
+										<?php if (isset($image[url])): ?>
+											<img src="<?php echo $image[sizes][thumbnail]; ?>" alt="">
+										<?php else: ?>
+											<i class="content-features__icon"></i>
+										<?php endif; ?>
+											<h3 class="content-features__subtitle"><?php the_title(); ?></h3>
+											<?php the_content(); ?>
+									</li>
+
+									<?php
+							}
+					}
+					// Reset the `$post` data to the current post in main query.
+					wp_reset_postdata();
+					?>
+				</ul>
+			</section>
+
+			<section class="storefront-product-section content-video-wrapper">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/kFknpoSITcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

@@ -180,7 +180,7 @@ if ( ! function_exists( 'storefront_site_title_or_logo' ) ) {
 	function storefront_site_title_or_logo( $echo = true ) {
 		if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
 			$logo = get_custom_logo();
-			$html = is_front_page() ? '<h1 class="logo">' . $logo . '</h1>' : $logo;
+			$html = is_front_page() ? '<div class="logo">' . $logo . '</div>' : $logo;
 		} elseif ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
 			// Copied from jetpack_the_site_logo() function.
 			$logo    = site_logo()->logo;
@@ -417,7 +417,7 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 	 *
 	 * @since 1.0.0
 	 */
-	function storefront_post_meta() {
+	/* function storefront_post_meta() {
 		?>
 		<aside class="entry-meta">
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search.
@@ -431,7 +431,6 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 				?>
 			</div>
 			<?php
-			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( __( ', ', 'storefront' ) );
 
 			if ( $categories_list ) : ?>
@@ -444,7 +443,6 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 			<?php endif; // End if categories. ?>
 
 			<?php
-			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', __( ', ', 'storefront' ) );
 
 			if ( $tags_list ) : ?>
@@ -466,7 +464,7 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 			<?php endif; ?>
 		</aside>
 		<?php
-	}
+	} */
 }
 
 if ( ! function_exists( 'storefront_paging_nav' ) ) {

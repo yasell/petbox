@@ -34,9 +34,21 @@
 	}
 
 	.widget {
+		margin-bottom: 0;
+
+		.widget-title {
+			padding-bottom: 0;
+		}
+
 		@media (max-width: $tablet) {
 			margin-bottom: 2em;
 		}
+	}
+
+	// VK widget
+	#vk_groups {
+		margin: 0 auto;
+		margin-bottom: 1em;
 	}
 }
 
