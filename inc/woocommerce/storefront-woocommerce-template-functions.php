@@ -370,6 +370,7 @@ if ( ! function_exists( 'storefront_handheld_footer_bar_account_link' ) ) {
 	 * @since 2.0.0
 	 */
 	function storefront_handheld_footer_bar_account_link() {
-		echo '<a href="' . esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) . '">' . esc_attr__( 'My Account', 'storefront' ) . '</a>';
+		echo '<a href="/"></a>';
+		// echo '<a href="' . esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) . '">' . esc_attr__( 'My Account', 'storefront' ) . '</a>';
 	}
 }

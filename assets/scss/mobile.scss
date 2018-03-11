@@ -1,0 +1,21 @@
+// mobile version
+@media (max-width: $tablet) {
+
+	.site-main {
+		margin-bottom: 0;
+	}
+
+	.storefront-handheld-footer-bar ul li.my-account > a:before {
+		content: "\f1b0" !important;
+	}
+
+	.storefront-handheld-footer-bar ul li.search > a:before {
+		content: "\f095" !important;
+	}
+
+	#vk_community_messages {
+		@media (max-width: $tablet) {
+			bottom: 50px !important;
+		}
+	}
+}

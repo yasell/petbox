@@ -437,8 +437,6 @@ h1.entry-title {
       padding: 0 15px; } }
 
 @media (max-width: 768px) {
-  #vk_community_messages {
-    bottom: 50px; }
       .woocommerce-active .site-header .col-full {
         padding-left: 1.41575em;
         padding-right: 1.41575em;
@@ -494,6 +492,13 @@ h1.entry-title {
               justify-content: center;
       text-align: center;
       color: #fff; }
+    .content-features ul {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .content-features__item {
+      width: 100%; }
+      .content-features__item:not(:last-child), .content-features__item:last-child {
+        margin-left: 5%; }
       .site-footer .col-full {
         margin-left: 0;
         margin-right: 0;
@@ -502,4 +507,14 @@ h1.entry-title {
     .site-footer {
       padding-bottom: 0; }
       .footer-widgets .widget {
-        margin-bottom: 2em; } }
+        margin-bottom: 2em; }
+  .site-main {
+    margin-bottom: 0; }
+  .storefront-handheld-footer-bar ul li.my-account > a:before {
+    content: "\f1b0" !important; }
+  .storefront-handheld-footer-bar ul li.search > a:before {
+    content: "\f095" !important; } }
+
+@media (max-width: 768px) and (max-width: 768px) {
+  #vk_community_messages {
+    bottom: 50px !important; } }

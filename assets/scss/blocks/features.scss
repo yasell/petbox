@@ -6,6 +6,12 @@
 		justify-content: space-around;
 		align-items: flex-start;
 	}
+
+	@media (max-width: $tablet) {
+		ul {
+			flex-wrap: wrap;
+		}
+	}
 }
 
 .content-features__title {
@@ -36,6 +42,15 @@
 	img {
 		max-width: 100%;
 		margin: auto;
+	}
+
+	@media (max-width: $tablet) {
+		width: 100%;
+
+		&:not(:last-child),
+		&:last-child {
+			margin-left: 5%;
+		}
 	}
 }
 

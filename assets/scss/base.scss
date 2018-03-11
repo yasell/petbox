@@ -59,12 +59,6 @@ a {
 	@include container;
 }
 
-#vk_community_messages {
-	@media (max-width: $tablet) {
-		bottom: 50px;
-	}
-}
-
 // back to top
 .back-top {
 	z-index: 1001;
