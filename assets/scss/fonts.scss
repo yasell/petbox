@@ -1,13 +1,39 @@
 @font-face {
-	font-family: "Fira Sans";
-	src: local("Fira Sans"), local("FiraSans-Regular"), url("../fonts/fira-sans/firasans-regular.woff2") format("woff2"), url("../fonts/fira-sans/firasans-regular.woff") format("woff"), url("../fonts/fira-sans/firasans-regular.ttf") format("truetype");
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue"), local("Helvetica"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-bold-webfont.woff2") format("woff2"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-bold-webfont.woff") format("woff"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-bold-webfont.eot") format("eot");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue"), local("Helvetica"),
+		url("../assets/fonts/Helvetica/helhelveticaneuecyr-medium-webfont.woff2") format("woff2"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-medium-webfont.woff") format("woff"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-medium-webfont.eot") format("eot");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue"), local("Helvetica"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-light-webfont.woff2") format("woff2"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-light-webfont.woff") format("woff"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-light-webfont.eot") format("eot");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "Fira Sans";
-	src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("../fonts/fira-sans/firasans-bold.woff2") format("woff2"), url("../fonts/fira-sans/firasans-bold.woff") format("woff"), url("../fonts/fira-sans/firasans-bold.ttf") format("truetype");
-	font-weight: 700;
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue"), local("Helvetica"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-thin-webfont.woff2") format("woff2"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-thin-webfont.woff") format("woff"),
+		url("../assets/fonts/Helvetica/helveticaneuecyr-thin-webfont.eot") format("eot");
+	font-weight: 300;
 	font-style: normal;
 }

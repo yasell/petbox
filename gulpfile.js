@@ -68,7 +68,7 @@ gulp.task('serve', ['style'], function () {
 	});
 
 	gulp.watch('assets/scss/**/*.{scss,sass}', ['style']);
-	gulp.watch('src/js/*.js', ['script']);
+	// gulp.watch('src/js/*.js', ['script']);
 	gulp.watch("*.php").on('change', server.reload);
 });
 

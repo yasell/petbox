@@ -37,7 +37,7 @@
 
 	// center part
 	 .secondary-navigation {
-		width: 63%;
+		width: 62%;
 		margin: 2.5em auto;
 
 		.menu {
@@ -129,6 +129,10 @@
 .main-navigation ul.menu ul.sub-menu,
 .main-navigation ul.nav-menu ul.children {
 	background-color: $gray-dark;
+
+	@media (max-width: $tablet) {
+		background-color: transparent;
+	}
 }
 
 // links color

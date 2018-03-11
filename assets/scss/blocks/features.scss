@@ -24,6 +24,10 @@
 	width: 30%;
 	vertical-align: sub;
 	text-align: center;
+	font-size: 15px !important;
+	line-height: 1.6em;
+	font-weight: 400;
+	color: $text_color;
 
 	&:not(:last-child) {
 		margin-right: 5%;

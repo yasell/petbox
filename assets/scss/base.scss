@@ -13,7 +13,7 @@ body {
 	max-width: 100%;
 	height: 100%;
 	min-height: 100%;
-	font-family: $font_base;
+	font-family: $font_helvetica;
 	overflow-x: hidden;
   text-rendering:  optimizeLegibility;
 	-webkit-text-size-adjust: none;
@@ -40,6 +40,14 @@ a {
 	background: url('../assets/images/backround-repeat.png') center repeat;
 }
 
+.col-full {
+	max-width: 1010px;
+
+	@media (min-width: $tablet) {
+		padding: 0 35px;
+	}
+}
+
 .page-wrapper {
 	position: relative;
 	min-height: 100%;
@@ -49,6 +57,12 @@ a {
 
 .container {
 	@include container;
+}
+
+#vk_community_messages {
+	@media (max-width: $tablet) {
+		bottom: 50px;
+	}
 }
 
 // back to top
